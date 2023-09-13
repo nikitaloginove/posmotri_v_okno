@@ -64,6 +64,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
+  min-width: 399px;
   height: 298px;
   overflow: auto;
   position: relative;
@@ -268,6 +269,10 @@ ol {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
+}
+
+.search-form__label:active {
+  outline: none;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
