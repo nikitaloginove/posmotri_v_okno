@@ -262,6 +262,10 @@ ol {
   margin: 3px;
 }
 
+.search-form__textfield:active {
+  border-color: transparent;
+}
+
 .search-form__textfield:focus {
   outline: none;
 }
@@ -271,11 +275,16 @@ ol {
   outline-offset: 2px;
 }
 
-.search-form__label:active {
-  outline: none;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  margin: 2px;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
   content: '';
   display: block;
   width: 15px;
